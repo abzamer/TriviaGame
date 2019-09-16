@@ -1,11 +1,24 @@
 //variables 
 var score = 0;
+var showQuiz;
 
 //start button
 $("#start").click(startQuiz);
 $("#submit").click(submitQuiz);
 
-//start function
+//function startQuiz
+// showQuiz =
+ function startQuiz(){
+    setInterval(questions, 150);
+ }
+
+
+
+
+     
+
+
+//function submitQuiz
 
 
 
