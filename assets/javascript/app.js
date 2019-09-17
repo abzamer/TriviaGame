@@ -1,27 +1,33 @@
 //variables 
 var score = 0;
-var showQuiz;
-var counter;
+var displayGame;
 
 //start button
-$("#start").click(startQuiz);
+// $("#start").click(startQuiz);
 // $("#submit").click(submitQuiz);
 
-//function startQuiz
-// showQuiz =
- function startQuiz(){
-    setInterval(questions, 150);
-    console.log(setInterval);
- }
-
-
- //function for questions & answers
-var questions = [
+ //quizQuestions
+var quizQuestions = [
     {question: "Which Weasley died in the battle of Hogwarts in Deathly Hallows?",
-    answer: "George" },
-    {question: "Luna Lovegood was introduced in the book _______."
-answer: "Order of the Phoenix" },
+    choices: ["George", "Ron", "Bill", "Fred"],
+    answer: "Fred" },
+
+    {question: "Luna Lovegood was introduced in the book _______.",
+    choices: ["Sorcerer's Stone", "Prisoner of Azkaban", "Order of the Phoenix", "Goblet of Fire"],
+    answer: "Order of the Phoenix" },
+    
 ];
+
+//function to display questions
+function displayQuestion(quizQuestion, index){
+    $("#quiz").innerHTML = quizQuestion.question;
+}
+
+//function startQuiz
+function startQuiz(){
+    displayGame = [];
+    quizQuestions.forEach(displayQuestion)
+ }
 
 // for loop to
 
@@ -30,11 +36,8 @@ answer: "Order of the Phoenix" },
      
 
 
-//function submitQuiz
+//function submitQuiz & show results
 
 
 
  
-
-
-//results
