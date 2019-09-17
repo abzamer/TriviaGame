@@ -4,7 +4,7 @@ var displayGame;
 
 //start button
 $("#start").click(startQuiz);
-// $("#submit").click(submitQuiz);
+$("#submit").click(submitQuiz);
 
  //quizQuestions
 var quizQuestions = [
@@ -17,12 +17,6 @@ var quizQuestions = [
     answer: "Order of the Phoenix" },
     
 ];
-
-//function to display questions
-// function displayQuestion(quizQuestion, index){
-//     $("#quiz").html(quizQuestion);
-//     console.log(quizQuestions);
-// }
 
 //function to display question
 function showQuestions(quizQuestions){
@@ -45,17 +39,9 @@ function startQuiz(){
     showQuestions(quizQuestions);
     // quizQuestions.forEach(displayQuestion)
  }
- 
-
-
-
-
-
-     
 
 
 //function submitQuiz & show results
-
-
-
- 
+function submitQuiz (){
+    alert("I'm done!");
+}
